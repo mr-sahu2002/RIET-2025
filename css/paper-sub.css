@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-title {
+  color: #ff6600;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.submission-info {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.submission-link {
+  margin: 1rem 0;
+}
+
+.submission-link a {
+  color: #ff0066;
+  text-decoration: none;
+}
+
+.submission-link a:hover {
+  text-decoration: underline;
+}
+
+.who-can-attend {
+  margin: 2rem 0;
+}
+
+.track-section {
+  margin: 2rem 0;
+}
+
+.track-title {
+  color: #ff6600;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub-track-title {
+  color: #3498db;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.track-list {
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.track-list li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.track-list li::before {
+  content: "•";
+  color: #ff6600;
+  position: absolute;
+  left: -1.5rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .track-title {
+    font-size: 1.25rem;
+  }
+
+  .sub-track-title {
+    font-size: 1.1rem;
+  }
+}

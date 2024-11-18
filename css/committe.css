@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.page-title {
+  color: #ff6600;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.committees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.committee-section {
+  margin-bottom: 2rem;
+}
+
+.committee-title {
+  color: #ff0000;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.member-card {
+  border-left: 3px solid #ff6600;
+  padding-left: 1rem;
+}
+
+.member-name {
+  color: #ff6600;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.member-title {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .committees-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .committee-title {
+    font-size: 1.5rem;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-title {
+    font-size: 0.9rem;
+  }
+}
