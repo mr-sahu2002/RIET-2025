@@ -1,0 +1,57 @@
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.date-card {
+  background-color: #ffebee;
+}
+
+.venue-card {
+  background-color: #e8f5e9;
+}
+
+.conference-card {
+  background-color: #e3f2fd;
+}
+
+.participation-card {
+  background-color: #fff8e1;
+}
+
+.card-content h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .info-cards {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .card {
+    height: auto;
+    padding: 1rem;
+  }
+}

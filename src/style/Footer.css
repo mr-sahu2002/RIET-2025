@@ -1,0 +1,89 @@
+.site-footer {
+  background-color: #f8f9fa;
+  padding: 3rem 0 2rem;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.college-info {
+  margin-bottom: 2rem;
+}
+
+.college-name {
+  color: #0066cc;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.college-address {
+  color: #666;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.credits {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.team-name {
+  color: #0066cc;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-footer {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .college-name {
+    font-size: 1.3rem;
+  }
+
+  .footer-content {
+    padding: 0 1rem;
+  }
+}

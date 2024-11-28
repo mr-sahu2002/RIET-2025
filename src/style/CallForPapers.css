@@ -1,0 +1,110 @@
+.call-for-papers {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+.paper-card {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.paper-card h1 {
+  text-align: center;
+  color: #0052cc;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.notice {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.submission-info {
+  color: #444;
+  line-height: 1.6;
+}
+
+.submission-info p {
+  margin-bottom: 1.5rem;
+}
+
+.blue-link {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.blue-link:hover {
+  color: #003d99;
+  text-decoration: underline;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.submit-button,
+.guidelines-button {
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.submit-button {
+  background-color: #0052cc;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #003d99;
+}
+
+.guidelines-button {
+  background-color: transparent;
+  color: #0052cc;
+}
+
+.guidelines-button:hover {
+  background-color: #f0f5ff;
+}
+
+@media (max-width: 768px) {
+  .call-for-papers {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .paper-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .paper-card h1 {
+    font-size: 2rem;
+  }
+
+  .notice {
+    font-size: 1.1rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .submit-button,
+  .guidelines-button {
+    text-align: center;
+  }
+}

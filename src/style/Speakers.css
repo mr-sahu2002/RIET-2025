@@ -1,0 +1,121 @@
+.speakers-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.speakers-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7c3aed;
+  margin-bottom: 3rem;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.speaker-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.speaker-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.speaker-image-wrapper {
+  width: 100%;
+  position: relative;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  overflow: hidden;
+}
+
+.speaker-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.speaker-card:hover .speaker-image {
+  transform: scale(1.05);
+}
+
+.speaker-info {
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+}
+
+.speaker-name {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.speaker-title {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .speakers-section {
+    padding: 2rem 1rem;
+  }
+
+  .speakers-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .speaker-card {
+    max-width: 300px;
+  }
+}
+
+/* Add smooth animation for card appearance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.speaker-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.speaker-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.speaker-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
