@@ -19,17 +19,24 @@ function Navbar({ onNavigate }) {
   ];
 
   const handleNavigation = (item) => {
-    const page = item.toLowerCase().replace(/\s+/g, "");
+    // const page = item.toLowerCase().replace(/\s+/g, "");
+    const page = item.toLowerCase();
     if (page === "about") {
       onNavigate("about");
-    } else if (page === "home") {
-      onNavigate("home");
+    } else if (page === "committee") {
+      onNavigate("committee");
     } else if (page === "speakers") {
       onNavigate("speakers");
-    } else if (page === "Call for Papers") {
-      onNavigate("Call for Papers");
+    } else if (page === "call for papers") {
+      onNavigate("call-for-papers");
+    } else if (page === "tracks") {
+      onNavigate("tracks");
+    } else if (page === "registration") {
+      onNavigate("registration");
+    } else if (page === "contact us") {
+      onNavigate("contact-us");
     } else {
-      onNavigate("committee");
+      onNavigate("home");
     }
     setIsMenuOpen(false);
   };

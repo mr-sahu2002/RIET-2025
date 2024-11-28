@@ -4,6 +4,12 @@ import ksitLogo from "../../resources/ksit.png";
 import ieeeLogo from "../../resources/ieee.png";
 
 function Hero() {
+  const handleTimelineClick = () => {
+    const timelineSection = document.getElementById("timeline");
+    if (timelineSection) {
+      timelineSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="hero">
       <div className="hero-overlay">
@@ -29,7 +35,9 @@ function Hero() {
 
           <div className="action-buttons">
             <button className="action-btn">SUBMIT PAPER</button>
-            <button className="action-btn">TIMELINE</button>
+            <button className="action-btn" onClick={handleTimelineClick}>
+              TIMELINE
+            </button>
             <button className="action-btn">DOWNLOAD BROCHURE</button>
           </div>
         </div>

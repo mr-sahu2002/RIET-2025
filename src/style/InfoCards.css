@@ -18,19 +18,19 @@
 }
 
 .date-card {
-  background-color: #ffebee;
+  background-color: #eba8b1;
 }
 
 .venue-card {
-  background-color: #e8f5e9;
+  background-color: #a5e8ab;
 }
 
 .conference-card {
-  background-color: #e3f2fd;
+  background-color: #9ccbec;
 }
 
 .participation-card {
-  background-color: #fff8e1;
+  background-color: #e8d597;
 }
 
 .card-content h3 {
@@ -40,7 +40,7 @@
 }
 
 .card-content p {
-  color: #666;
+  color: #282727;
   font-size: 0.9rem;
 }
 

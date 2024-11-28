@@ -1,0 +1,176 @@
+.contact-container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+}
+
+.contact-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-content h1 {
+  text-align: center;
+  color: #0066cc;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+  color: #0066cc;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.contact-header h3 {
+  color: #333;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.designation {
+  text-align: center;
+  color: #666;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.icon {
+  color: #0066cc;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contact-item strong {
+  display: block;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.contact-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.email-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.email-links a {
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email-links a:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+.email-separator {
+  color: #666;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 1rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .email-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .email-separator {
+    display: none;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .designation {
+    font-size: 1rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}
+
+/* Improve touch targets on mobile */
+@media (hover: none) {
+  .contact-item,
+  .email-links a {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Add focus styles for accessibility */
+.email-links a:focus-visible {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
+}

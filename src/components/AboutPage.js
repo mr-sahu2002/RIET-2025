@@ -6,48 +6,45 @@ function AboutPage() {
     <div className="about-page">
       <h1>About RIET-2025</h1>
       <section>
-        <h2>Our Mission</h2>
+        <h2>Vision</h2>
         <p>
-          The International Conference On Recent Innovations In Engineering
-          Science And Technology (RIET) aims to bring together leading
-          academicians, scientists, researchers, and scholars to exchange and
-          share their experiences and research results about all aspects of
-          Computational Systems and Information Technology.
+          To impart quality technical education with ethical values, employable
+          skills and research to achieve excellence.
         </p>
       </section>
       <section>
-        <h2>Conference Objectives</h2>
+        <h2>Mission</h2>
         <ul>
           <li>
-            To provide a premier interdisciplinary platform for researchers,
-            practitioners, and educators
+            To attract and retain highly qualified, experienced and committed
+            faculty.
+          </li>
+          <li>To create relevant infrastructure.</li>
+          <li>
+            Network with industry and premier institutions to encourage
+            emergence of new ideas by providing research and development
+            facilities to strive for academic excellence.
           </li>
           <li>
-            To present and discuss the most recent innovations, trends, and
-            concerns in the fields of Computational Systems and Information
-            Technology
-          </li>
-          <li>
-            To promote collaboration between academia and industry for
-            sustainable solutions
-          </li>
-          <li>
-            To foster networking opportunities with eminent personalities and
-            experts in the field
+            To inculcate the professional and ethical values among young
+            students with employable skills and knowledge acquired to transform
+            the society.
           </li>
         </ul>
       </section>
       <section>
         <h2>About K S Institute Of Technology</h2>
         <p>
-          The Kammavari Sangham, a multi-activity non-profit oriented voluntary
-          service organization, was established in the year 1952 with the sole
-          objective of providing charitable service to community and society.
-          Enthused with this success of its foray into technical education, the
-          Sangham moved forward by starting the K.S Institute of Technology
-          (KSIT) Its Engineering College in the year 1999. In the years that
-          followed, KSIT quickly earned an outstanding reputation for academic
-          excellence.
+          K. S. Institute of Technology was established in the year 1999 by the
+          Kammavari Sangham with a commitment to provide value based technical
+          education. KSIT is strategically located at No.14 Raghuvanahalli,
+          Kanakapura Main Road, Bengaluru. The Institute has modern
+          infrastructure with state-of-the art equipment and laboratory
+          facilities, well qualified faculty and an impressive placement record.
+          The objective of KSIT is to impart quality education to students and
+          enable them to develop the abilities of problem solving, creative
+          thinking and adaptability in their chosen field. KSIT is NAAC
+          accredited with A+
         </p>
       </section>
     </div>

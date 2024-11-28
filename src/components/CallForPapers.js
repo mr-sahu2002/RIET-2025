@@ -16,16 +16,23 @@ function CallForPapers() {
             Prospective authors are encouraged to submit quality and original
             research papers for presentation at the Conference. Authors are
             requested to submit their manuscripts in PDF format not exceeding 6
-            pages in A4 size through online submission at Microsoft CMT - on or{" "}
+            pages in A4 size through online submission at Microsoft CMT on or
+            before{" "}
             <em>
-              before 10<sup>th</sup> August 2024
+              30<sup>th</sup> July 2024
             </em>
             . The manuscript should follow the standard IEEE template. The
-            format of the paper could be downloaded in the link below{" "}
-            <a href="www.google.com" className="blue-link">
-              Manuscript Template Link
+            format of the paper can be downloaded at the link below:
+            <a href="https://www.ieee.org/conferences/publishing/templates.html">
+              IEEE Conference Templates
             </a>
             .
+          </p>
+          <p>
+            All submissions for the conference will be handled electronically,
+            and submitted papers will be peer-reviewed by domain experts. To
+            submit the papers, please follow the guidelines provided on the
+            submission platform.
           </p>
 
           <p>

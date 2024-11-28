@@ -10,6 +10,9 @@ import AboutPage from "./components/AboutPage";
 import Speakers from "./components/Speakers";
 import CommitteeMemberDetails from "./components/CommitteeMemberDetails";
 import CallForPapers from "./components/CallForPapers";
+import Tracks from "./components/Tracks";
+import Registration from "./components/Registration";
+import ContactUs from "./components/ContactUs";
 import "./App.css";
 
 function App() {
@@ -53,8 +56,14 @@ function App() {
         )
       ) : currentPage === "speakers" ? (
         <Speakers />
-      ) : currentPage === "call for papers" ? (
+      ) : currentPage === "call-for-papers" ? (
         <CallForPapers />
+      ) : currentPage === "tracks" ? (
+        <Tracks />
+      ) : currentPage === "registration" ? (
+        <Registration />
+      ) : currentPage === "contact-us" ? (
+        <ContactUs />
       ) : null}
       <Footer />
     </div>
