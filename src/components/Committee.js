@@ -3,24 +3,28 @@ import "../style/Committee.css";
 
 function Committee({ onSelectCategory }) {
   const committees = [
-    { title: "Chief Patron", link: "chief-patron" },
+    { title: "Chief Patrons", link: "chief-patrons" },
     { title: "Patrons", link: "patrons" },
-    { title: "Conference Chairs", link: "conference-chairs" },
+    { title: "Conference Chair", link: "conference-chair" },
+    { title: "Chief Convener", link: "chief-convener" },
+    { title: "Co-Convener", link: "co-convener" },
+    { title: "Organizing Secretary", link: "organizing-secretary" },
     { title: "Program Chairs", link: "program-chairs" },
-    { title: "Technical Program Chairs", link: "technical-program" },
-    { title: "Finance Chairs", link: "finance" },
-    { title: "Publication Chairs", link: "publication" },
-    { title: "Sponsorship Chairs", link: "sponsorship" },
-    { title: "Publicity and Media Chairs", link: "publicity" },
-    { title: "Organizing Committee", link: "organizing" },
-    { title: "Advisory Committee", link: "advisory" },
-    { title: "Website Chairs", link: "website" },
-    { title: "Conference Convenors", link: "convenors" },
-    { title: "Session Management", link: "session" },
-    { title: "Hospitality", link: "hospitality" },
-    { title: "Transportation", link: "transportation" },
-    { title: "Registration Committee", link: "registration" },
+    { title: "Technical Program Chairs", link: "technical-program-chairs" },
+    { title: "Finance Chairs", link: "finance-chairs" },
+    { title: "Publication Chairs", link: "publication-chairs" },
+    { title: "Sponsorship Chairs", link: "sponsorship-chairs" },
+    { title: "Publicity Chairs", link: "publicity-chairs" },
+    { title: "Hospitality Chairs", link: "hospitality-chairs" },
+    { title: "Registration Committee", link: "registration-committee" },
+    { title: "Advisory Committee", link: "advisory-committee" },
   ];
+
+  const handleSelectCategory = (link) => {
+    onSelectCategory(link);
+    // Scroll to the top after the category is selected
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className="committee-section">
@@ -40,7 +44,7 @@ function Committee({ onSelectCategory }) {
             <div
               key={index}
               className="committee-card"
-              onClick={() => onSelectCategory(committee.link)}
+              onClick={() => handleSelectCategory(committee.link)}
               role="button"
               tabIndex={0}
             >

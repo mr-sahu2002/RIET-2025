@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .committee-section {
   width: 100%;
   background-color: #fff;
@@ -41,13 +45,14 @@
 }
 
 .committee-card {
-  background: white;
+  background: rgba(162, 172, 228, 0.681);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   text-align: center;
