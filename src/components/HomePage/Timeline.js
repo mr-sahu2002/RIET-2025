@@ -27,6 +27,7 @@ function Timeline() {
           <div className="timeline-dot"></div>
           <div className="timeline-content">
             <h3>Last Date for Registration</h3>
+            <p>28th March 2025</p>
           </div>
         </div>
 
