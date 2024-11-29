@@ -11,12 +11,12 @@ function ContactUs() {
         <div className="contact-card">
           <div className="contact-header">
             <h2>Organizing Chair, RIET-2025</h2>
-            <h3>Dr. Suresh</h3>
+            <h3>Dr. Dileep Kumar</h3>
           </div>
 
           <div className="contact-info">
             <p className="designation">
-              Professor and Head, Dept. of AI & ML,
+              Principal of
               <br />
               K. S. INSTITUTE OF TECHNOLOGY, Bengaluru, India.
             </p>
@@ -39,7 +39,9 @@ function ContactUs() {
                       riet2025@ksit.edu.in
                     </a>
                     <span className="email-separator">/</span>
-                    <a href="mailto:hodaiml@ksit.edu.in">hodaiml@ksit.edu.in</a>
+                    <a href="mailto:dilipkumar@ksit.edu.in">
+                      dilipkumar@ksit.edu.in
+                    </a>
                   </div>
                 </div>
               </div>
